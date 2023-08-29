@@ -1,13 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Gas from './Russia';
+import {Hello, Bye} from './Hello';
+import { BirthDaySong } from './BirthdaySong';
+
+const Variable = "Fucking hitler"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Gas/>
+    <Hello/>
+    <Bye/>
+    <BirthDaySong age = {69} name = {Variable} />
   </React.StrictMode>
 );
 
@@ -15,3 +22,7 @@ root.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
+// arrow function / default regular function
+// export / importing (export default | export)
+// Calling components / call function
